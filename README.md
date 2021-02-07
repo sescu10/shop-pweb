@@ -1,61 +1,61 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Documentatie : Programare WEB
+Student: Sescu Andrei 
+IFR - Anul II
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Descriere 
 
-## About Laravel
+	Proiectul consta intr-un magazine online care iti ofer posibilitate sa vizualizezi produse si detaliile lor. Fiecare produs ofera posibilitatea de a fi cumparat, acesta este caracterizat prin detaliile: num, pret, imagini, descriere. Atasat unui produs se pot gasi review-urile care pot fi lasate si de cate utilizatori care sunt logati. Site-ul ofera posibilitatea logarii, ceea ce ofera utilizatorului capacitatea de a comanda un produs si de a lasa review-uri. 
+Atunci cand utilizatorul adauga in cos produsele acesta poate manipula lista de produse intru-un modal care afiseaza detaliile si preturile produselor. Atunci cand un utilizator plaseaza o comanda ea este intordusa in istoricul de comenzi al utilizatorului. 
+	Pe langa aceastea situl ofera liste si modalitati de avizualizare filtrata a lor. Printre acestea se pot gasi si paginile statice de Acasa, Livreare, Recenzii si Despre noi. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Limbajele de programere utilizate 	
+•	PHP - PHP: Hypertext Preprocessor
+•	MySQL - MY Structured Query Language
+•	JS - JavaScript 
+•	HTML - HyperText Markup Language
+•	CSS - Cascading Style Sheets
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Framework-uri 	
+•	Laravel - PHP
+•	Bootstrap - CSS 
+•	JQuery - JavaScript 
 
-## Learning Laravel
+Interfata
+	Interfata este sustinuta de HTML5 si CSS3 unele dintre cele mai vechi limbaje. Unul dinte marele ajutoare in a usura complxitate si dificultatile interfetei este utlizarea framworkului Boostrap care vine cu multe clase care vine cu şabloane de design HTML si CSS pentru orice, de la meniuri de navigaţie, butoane, imagini, fonturi, formulare şi alte componente de interfaţă, precum şi extensii JavaScript.
+JavaScript este un limbaj de programare ușor, interpretat sau compilat in timp real, cu funcții de primă clasă.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Baza de date
+	MySQL este un SGBD ce permite gestionarea mai multor baze de date, dar la un moment dat se lucrează cu o singură bază de date. Practic, fiecare bază de date reprezintă un director aflat pe hard-diskul serverului, fiecărei tabele din baza de date corespunzându-i unul sau mai multe fișiere.
+	Un mare ajutor in comunicare cu Baza de Date si este Laravel care include Eloquent, un mapor relațional obiect (ORM) care face plăcută interacțiunea cu baza de date.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Server
+	PHP este un limbaj de script pentru server și un instrument puternic pentru realizarea de pagini web dinamice și interactive. PHP este o alternativă larg utilizată, gratuită și eficientă la concurenți, cum ar fi ASP-ul Microsoft. PHP 7 este cea mai recentă versiune stabilă. In dezvoltare acestui proiect am folosti Laravel 8 care este un framwork PHP acesta ofera multe avantaje in dezvoltarea unui proiect usurand modul dezvoltarea proiectului prin pachete si clase care faciliteaza dezvotarea.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Instalare 
+Pentru rularea sa in development se poate folosi Homeastead acesta vine preinstalat cu toate pachetele necesare si puteti gasi instructiunile aici: https://laravel.com/docs/8.x/homestead 
 
-### Premium Partners
+Pentru a folosi Laravel 8 serverul necesita urmatoarele extensii:
+•	PHP >= 7.3
+•	BCMath PHP Extension
+•	Ctype PHP Extension
+•	Fileinfo PHP Extension
+•	JSON PHP Extension
+•	Mbstring PHP Extension
+•	OpenSSL PHP Extension
+•	PDO PHP Extension
+•	Tokenizer PHP Extension
+•	XML PHP Extension	
+Apoi trebuie facuta configuratia serverului pentru Nginx, Apache sau serviciul folosit. 
+Urmatorul pas este clonarea proiectului de la sursa https://github.com/sescu10/shop-pweb.git  , urmeaza sa mergem in baza proiectului si cream o copie la fisierul .env.example, copie pe care o vom denumi .env . 
+	In acest fisier .env se gasesc inforamtiile de acesare a bazei de date, ai va trebui sa fie modificate numele bazei de date cu cel creat de dumneavoastra si intoduse user-ul si parola perntru accesarea acestei baze de date. 
+	Urmeaza sa rulam cateva comenzi pentru a instala pachetele necesare si a seta informatile demo.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+•	composer install – aceasta comanda va instala pachetele necesare pentru Laravel
+•	artisan migrate – aceasta va crea tabele si coloanele necesare pentru proiect
+•	artisan db:seed – aceasta comanda va popular tabele cu informatiile demo ca site-ul sa nu fie gol. Aceasta va genera un useri, produse si recenzii.
+•	npm install – Laravel foloseste npm pentru a administra pachete css si js iar aceasta va instala aceste pachete
+•	npm run-watch – va lua aceste pachete si va generea fisierele css si js care pot fi interpretate de browser
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+De trebuie setat pe calc in hosts ip-ul pentru server si url-ul la care se va gasi site-ul. Site-ul are utilizatorul: sescu.andrei@yahoo.com si parola: 123456 dupa ce va logati puteti accesa toate functionalitatile site-ului.
